@@ -41,7 +41,7 @@ function countingValleys(steps, path) {
             if (seaLvl === 0) {
                 valleyTraversed = valleyTraversed + 1;
             }
-        } else if (path[i] == 'D') {
+        } else if (path[i] === 'D') {
             seaLvl = seaLvl - 1;
         }
     }
