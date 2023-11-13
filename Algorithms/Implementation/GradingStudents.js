@@ -43,6 +43,7 @@ function round(n) {
 function gradingStudents(grades) {
     let result = [];
     for (let i = 0; i < grades.length; i++) {
+        //Example: [73,67,38,41] => [15*5,14*5,8*5,9*5] => [75,70,40,45]
         let newValue = Math.ceil(grades[i] / 5) * 5;
         if (newValue - grades[i] < 3 && grades[i] >= 38) {
             grades[i] = round(grades[i])
