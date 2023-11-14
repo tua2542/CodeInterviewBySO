@@ -36,12 +36,12 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
     let count_apple = 0;
     let count_orange = 0;
     for (let d in apples) {
-        if (apples[d]+a >= s && apples[d]+a <= t ) {
+        if (apples[d] + a >= s && apples[d] + a <= t ) {
             count_apple = count_apple + 1;
         }
     }
     for (let d in oranges) {
-        if (oranges[d]+b >= s && oranges[d]+b <= t ) {
+        if (oranges[d] + b >= s && oranges[d] + b <= t ) {
             count_orange = count_orange + 1;
         }
     }
