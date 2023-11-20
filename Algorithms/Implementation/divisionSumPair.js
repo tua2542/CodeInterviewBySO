@@ -48,8 +48,8 @@ function divisibleSumPairs(n, k, ar) {
     let count = 0;
     let map = {};
 
-    for (let i in ar) {
-        let mod = ar[i] % k;
+    for (let num of ar) {
+        let mod = num % k;
         let compl = (k - mod) % k;
 
         if (map[compl]) {
