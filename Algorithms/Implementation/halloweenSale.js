@@ -58,6 +58,27 @@ function howManyGames(p, d, m, s) {
     return count;
 }
 
+//refactored
+function howManyGames(p, d, m, s) {
+    let sum = 0;
+    let count = 0;
+
+    while (sum <= s) {
+        sum += p; // Purchase the game
+
+        p = Math.max(p - d, m); // Decrease the cost by d until it reaches m or stay at m
+
+        count++; // Increment the count
+    }
+
+    // If the last purchase exceeds the budget, decrement the count
+    if (sum > s) {
+        count--;
+    }
+
+    return count;
+}
+
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
