@@ -9,4 +9,4 @@ function showListNumWithPow (n) {
     }
 }
 
-showListNumWithPow(16);
+showListNumWithPow(128);
