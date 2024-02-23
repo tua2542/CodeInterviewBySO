@@ -23,7 +23,7 @@ function NumToroman(num) {
         while(num >= romanNumerals[i].value){
             result = result + romanNumerals[i].numeral;
             num = num - romanNumerals[i].value;
-            arr.push(result);
+            arr.push(romanNumerals[i].numeral);
         }
     }
 
